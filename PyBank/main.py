@@ -21,7 +21,7 @@ with open(budget_csv) as csvfile:
         total_months.append(row[0])
         net_total.append(int(row[1]))
 
-# Find the length of row 1 subtracting out the header. Append to that list row + 1 minus the row before it.
+# Find the length of row. Append to that list the (row + 1) minus (the row before it).
 
     profit_change = []
     for i in range(len(net_total)-1):
